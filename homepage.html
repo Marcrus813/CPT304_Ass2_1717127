@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+</head>
+
+<script src = "/src/fetchHoliday.js"></script>
+<script src = '/src/fetchHotel.js'></script>
+<script src = '/src/fetchWeather.js'></script>
+<script src = '/src/jquery.js'></script>
+
+<body>
+    <div class="header">
+        <font size="10">
+            <h1>Holidays, hotels and weather</h1>
+        </font>
+    
+        </div>
+        <div>
+            Input year<input type="text" value="" id="year">
+            Input 2-digit Country Code (CN, US, JP, etc.)<input type = 'text' value = '' id = 'CountryCode'>
+            
+            <button type="button" onclick="fetchHolidays()">Explore the holidays</button>
+    
+        </div>
+
+        <pre id="holidaylist">
+        </pre>
+
+        <div>
+            Input City<input type="text" value="" id="cityName">
+            <button type="button" onclick="fetchHotels()">Explore the hotels</button>
+        </div>
+
+        <pre id="hotellist">
+        </pre>
+
+        <div>
+            Input a date from the holidays (YYYY-MM-DD)<input type = 'text' value = '' id = 'selectedDate'>
+            <button type="button" onclick="fetchWeather()">See the weather</button>
+        </div>
+
+        <pre id="weatherlist">
+        </pre>
+
+</body>
+</html>
